@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>File Upload by Ajax</title>
+	<style>
+		.container {
+			width: 500px;
+			margin: 0 auto;
+		}
+		.progress_outer {
+			border: 1px solid #000;
+		}
+		.progress {
+			width: 0%;
+			background: #DEDEDE;
+			height: 20px;
+		}
+		._uploaded {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>Select File:</p>
+		<input type="file" id="_file">
+		<input type="button" id="_submit" value="Upload">
+		<div class="progress_outer">
+			<div id="_progress" class="progress"></div>
+		</div>
+		<img src="" id="_uploaded" class="_uploaded">
+	</div>
+	<script src='upload.js'></script>
+</body>
+</html>
